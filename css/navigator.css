@@ -1,0 +1,95 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #007acc;
+}
+
+.header p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Button Container Styling */
+.btnDiv {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+/* Option Styling (Not Button-like) */
+.btnDiv a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btnDiv a:hover, .btnDiv a.active {
+    color: #007acc;
+    border-color: #007acc;
+}
+
+/* Image Container Styling */
+.imgDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Image Styling */
+.imgDiv img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.imgDiv img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btnDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnDiv a {
+        margin: 10px 0;
+    }
+
+    .imgDiv {
+        padding: 0 10px;
+    }
+}
